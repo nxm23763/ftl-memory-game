@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>light and memory game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>light and memory game with すみっコぐらし Summiko Gurashi friends!</h1>
+    <p>
+      Welcome friends! Practice your memory skills with our friends at Sumikko
+      Gurashi! I do not own any Sumikko Gurashi art pieces used in this game and
+      all credit goes to San-X! (This website is Natalia Mora's prework CodePath
+      submission for the Salesforce Futureforce Tech Launchpad program in summer
+      2023 at San Francisco, CA!)
+    </p>
+    
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+
+    <div id="gameButtonArea">
+      
+      <button
+        id="button1"
+        onclick="guess(1)"
+        onmousedown="startTone(1); showImage(1)"
+        onmouseup="stopTone(); hideImage(1)"
+      >
+        <img
+          id="button1img"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs1.stickers.cloud%2Fpacks%2F154c5f33-bd52-447c-a6b2-e56d078fc223%2Fpng%2F193bf5f9-f3b5-4cdd-8884-63db6c4bedd0.png&f=1&nofb=1"
+          height="125"
+          width="125"
+          alt="button1img"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button2"
+        onclick="guess(2)"
+        onmousedown="startTone(2); showImage(2)"
+        onmouseup="stopTone(); hideImage(2)"
+      >
+        <img
+          id="button2img"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F66.media.tumblr.com%2F46ddf0ab0ebe3b92bff13f83f872091f%2Ftumblr_ovnrvkHzgQ1utg2kio4_400.png&f=1&nofb=1"
+          height="115"
+          width="125"
+          alt="button2img"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button3"
+        onclick="guess(3)"
+        onmousedown="startTone(3); showImage(3)"
+        onmouseup="stopTone(); hideImage(3)"
+      >
+        <img
+          id="button3img"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsdl-stickershop.line.naver.jp%2Fproducts%2F0%2F0%2F1%2F4924%2Fandroid%2Fstickers%2F6708534.png%3Bcompress%3Dtrue&f=1&nofb=1"
+          height="125"
+          width="125"
+          alt="button3img"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button4"
+        onclick="guess(4)"
+        onmousedown="startTone(4); showImage(4)"
+        onmouseup="stopTone(); hideImage(4)"
+      >
+        <img
+          id="button4img"
+          src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fdl.stickershop.line.naver.jp%2Fproducts%2F0%2F0%2F1%2F5591%2Fandroid%2Fstickers%2F8902001.png&f=1&nofb=1"
+          height="108"
+          width="125"
+          alt="button4img"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button5"
+        onclick="guess(5)"
+        onmousedown="startTone(5); showImage(5)"
+        onmouseup="stopTone(); hideImage(5)"
+      >
+        <img
+          id="button5img"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstickershop.line-scdn.net%2Fstickershop%2Fv1%2Fsticker%2F17738%2Fandroid%2Fsticker.png%3Bcompress%3Dtrue&f=1&nofb=1"
+          height="113"
+          width="125"
+          alt="button5img"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button6"
+        onclick="guess(6)"
+        onmousedown="startTone(6); showImage(6)"
+        onmouseup="stopTone(); hideImage(6)"
+      >
+        <img
+          id="button6img"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpics.prcm.jp%2F4ead631fe0a1f%2F49928617%2Fpng%2F49928617_220x220.png&f=1&nofb=1"
+          height="125"
+          width="125"
+          alt="button6img"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button7"
+        onclick="guess(7)"
+        onmousedown="startTone(7); showImage(7)"
+        onmouseup="stopTone(); hideImage(7)"
+      >
+        <img
+          id="button7img"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F7f%2Fbb%2Fcc%2F7fbbcc551988f9ec1d016829663e66e8.png&f=1&nofb=1"
+          height="125"
+          width="125"
+          alt="button7img"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button8"
+        onclick="guess(8)"
+        onmousedown="startTone(8); showImage(8)"
+        onmouseup="stopTone(); hideImage(8)"
+      >
+        <img
+          id="button8img"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsdl-stickershop.line.naver.jp%2Fstickershop%2Fv1%2Fsticker%2F6708517%2Fandroid%2Fsticker.png&f=1&nofb=1"
+          height="122"
+          width="125"
+          alt="button8img"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button9"
+        onclick="guess(9)"
+        onmousedown="startTone(9); showImage(9)"
+        onmouseup="stopTone(); hideImage(9)"
+      >
+        <img
+          id="button9img"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsdl-stickershop.line.naver.jp%2Fstickershop%2Fv1%2Fsticker%2F124368100%2Fandroid%2Fsticker.png&f=1&nofb=1"
+          height="108"
+          width="125"
+          alt="button9img"
+          class="hidden"
+        />
+      </button>
+    </div>
+  </body>
+</html>

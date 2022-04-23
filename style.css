@@ -1,0 +1,141 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: "Courier New", monospace;
+  line-height: 1.5;
+  background-color: mistyrose;
+  color: saddlebrown;
+}
+
+h1 {
+  font-family: "Lucida Console", monospace;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.glow {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+}
+
+#button1 {
+  background: lightsalmon;
+}
+
+#button2 {
+  background: darkseagreen;
+}
+
+#button3 {
+  background: lightcyan;
+}
+
+#button4 {
+  background: whitesmoke;
+}
+
+#button5 {
+  background: tan;
+}
+
+#button6 {
+  background: lemonchiffon;
+}
+
+#button7 {
+  background: paleturquoise;
+}
+
+#button8 {
+  background: thistle;
+}
+
+#button9 {
+  background: lightpink;
+}
+
+#button1:active,
+#button1.lit {
+  background: chocolate;
+}
+
+#button2:active,
+#button2.lit {
+  background: seagreen;
+}
+
+#button3:active,
+#button3.lit {
+  background: lightblue;
+}
+
+#button4:active,
+#button4.lit {
+  background: gainsboro;
+}
+
+#button5:active,
+#button5.lit {
+  background: sienna;
+}
+
+#button6:active,
+#button6.lit {
+  background: khaki;
+}
+
+#button7:active,
+#button7.lit {
+  background: turquoise;
+}
+
+#button8:active,
+#button8.lit {
+  background: plum;
+}
+
+#button9:active,
+#button9.lit {
+  background: lightcoral;
+}
+
+.hidden {
+  display: none;
+}
+
+div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#gameButtonArea > button {
+  width: 150px;
+  height: 150px;
+  margin: 2px;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: 125;
+  max-width: 100%;
+}

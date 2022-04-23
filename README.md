@@ -1,6 +1,6 @@
 # Light and Memory Game Pre-work Assignment
 
-Description goes here!
+This is Natalia Mora's prework submission to the Futureforce Tech Launchpad program!
 
 ## Task 2: GIF of Implemented Features
 

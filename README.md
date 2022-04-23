@@ -2,6 +2,8 @@
 
 This is Natalia Mora's prework submission to the Futureforce Tech Launchpad program!
 
+Please see my live site [here](https://light-memory-game-ftl-2023-natalia-mora.glitch.me) and my code [here!](https://glitch.com/edit/#!/light-memory-game-ftl-2023-natalia-mora)
+
 ## Task 2: GIF of Implemented Features
 
 ![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)

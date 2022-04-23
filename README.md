@@ -1,4 +1,4 @@
-# Light and Memory Game Pre-work tasks 2, 3 and 4
+# Light and Memory Game Pre-work Assignment
 
 Description goes here!
 
